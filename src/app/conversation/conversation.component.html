@@ -1,0 +1,76 @@
+<div class="conversationContainer" [ngClass]="{'shaker': shake}">
+    
+        <div class="row">
+            <div class="col-md-3 maxwi300">
+                <div id="conversationSidebar" *ngIf="user">
+
+                    <div class="vh30">
+                        <div class="avatarFrameOnlineConv">
+                            <img [src]="friend.avatar || 'assets/img/generic_avatar.png'" class="avatarImage img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="vh30"></div>
+                    
+                    <div class="vh30">
+                        <div class="avatarFrameOnlineConv">
+                            <img [src]="user.avatar || 'assets/img/generic_avatar.png'" class="avatarImage img-fluid" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="col-md-9">
+                <div>
+                    <h3>{{friend?.nick}}</h3><small>(online)</small>
+                </div>
+
+                <hr>
+
+                <div id="conversationBg">
+
+                    <div *ngFor="let m of conversation">
+
+                        <div class="messageContainer" *ngIf="m.sender != user.uid">
+                            <div class="friendContainer">
+                                <img [src]="friend.avatar || 'assets/img/generic_avatar.png'" class="picBubble" alt="Imagen de amigo"><span class="messageFriend"> {{m.text}} </span>
+                            </div>
+                        </div>
+
+                        <div class="messageContainer" *ngIf="m.sender == user.uid">
+                            <div class="userContainer">
+                                <span class="messageUser"> {{m.text}} </span><img [src]="user.avatar || 'assets/img/generic_avatar.png'" class="picBubble" alt="Imagen de amigo">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="messageSending">
+                      <textarea [(ngModel)]="textMessage" (keyup.enter)="sendMessage()" name="" id="textareaConversation" class="form-control" cols="30" rows="5"></textarea>
+                      <div id="messageToolBar">
+                            <div class="item">
+                              <img src="assets/img/icons/regular_smile.gif" class="tool">
+                              <i name="caret-down"></i>
+                            </div>
+                            <div class="item">
+                              <img src="assets/img/icons/wink_smile.gif" class="tool">
+                              <i name="caret-down"></i>
+                            </div>
+                            <div class="item" (click)="sendZumbido()">
+                              <img src="assets/img/zumbido.png" class="tool">
+                            </div>
+                  
+                            <a class="btn btn-primary btn-sm marri10" accept="image/*">Enviar</a>
+                            <label class="custom-file-upload">
+                              <input type="file">
+                              <i name="image"></i> Seleccionar Imagen
+                            </label>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+</div>

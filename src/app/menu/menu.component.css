@@ -1,0 +1,29 @@
+#main-logo {
+    width: 40px;
+}
+
+#menuContainer {
+    background: rgb(0,212,255);
+    background: linear-gradient(180deg, rgba(0,212,255,1) 0%, rgba(32,149,249,1) 52%, rgba(21,124,186,1) 100%);
+    box-shadow: 0px 15px 15px -4px rgba(0, 0, 0, 0.24);
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 56px;
+    top: 0px;
+    border-top: 1px solid white;
+}
+
+.branding {
+    padding: 5px !important;
+    border-top: none !important;
+    border-right: none !important;
+}
+
+#menuContainer > .item {
+    padding: 15px;
+    color: white;
+    cursor: default;
+    border: 1px solid white;
+    display: inline-block;
+}

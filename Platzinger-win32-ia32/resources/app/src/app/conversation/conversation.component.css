@@ -1,0 +1,165 @@
+.conversationContainer {
+    background-image: url('../../assets/img/msnbg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 14px;
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatarFrameOfflineConv {
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    background: rgb(176,184,185);
+    background: linear-gradient(90deg, rgba(176,184,185,1) 0%, rgba(254,255,255,1) 51%, rgba(175,190,189,1) 100%);
+    width: 150px;
+}
+
+.avatarFrameOnlineConv {
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    background: rgb(27,175,7);
+    background: linear-gradient(180deg, rgba(27,175,7,1) 0%, rgba(78,239,86,1) 64%, rgba(36,189,8,1) 100%);
+    width: 100%;
+}
+
+.topImg {
+    margin-bottom: 200px;
+}
+
+.picBubble {
+    width: 28px;
+    border-radius: 50%;
+    display: inline-block;
+    height: 28px;
+    margin-top: 16px;
+}
+
+.friendContainer {
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.userContainer {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.messageFriend {
+    display: inline-block;
+    font-family: sans-serif; 
+    font-size: 14px; 
+    font-weight: 400; 
+    color: #ffffff; 
+    background:#889ccf;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 2px solid #5878ca;
+    width: 450px;
+    padding: 10px;
+    margin-left: 7px;
+}
+
+.messageUser {
+    display: inline-block;
+    font-family: sans-serif; 
+    font-size: 14px; 
+    font-weight: 400; 
+    color: #ffffff; 
+    background:#28c567;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 2px solid #0d9c33;
+    width: auto;
+    max-width: 450px;
+    padding: 10px;
+    margin-right: 7px;
+}
+
+#textareaConversation {
+    width: 100%;
+    height: 80px;
+}
+
+#conversationBg {
+    height: 55vh;
+    padding-bottom: 10px;
+    overflow: scroll;
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.maxwi300 {
+    max-width: 300px;
+}
+
+#conversationSidebar {
+    padding: 30px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.vh20 {
+    height: 20vh;
+}
+.vh25 {
+    height: 25vh;
+}
+.vh30 {
+    height: 30vh;
+}
+.vh40 {
+    height: 40vh;
+}
+.vh60 {
+    height: 60vh;
+}
+.vh70 {
+    height: 70vh;
+}
+
+#messageToolBar {
+    border: 2px solid #cfd1d5;
+    padding: 5px;
+    border-top: 0px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e9ebf0+50,f1f3f8+87,fff9f9+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e9ebf0 50%, #f1f3f8 87%, #fff9f9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e9ebf0 50%,#f1f3f8 87%,#fff9f9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#e9ebf0 50%,#f1f3f8 87%,#fff9f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fff9f9',GradientType=0 ); /* IE6-9 */
+}
+#messageToolBar > .item {
+    display: inline-block;
+    margin-right: 8px;
+    cursor: pointer;
+}
+#messageToolBar > .item > .tool {
+    height: 24px;
+    margin-right: 4px;
+}
+
+.marri10{
+    margin-right: 10px;
+}
+
+.wi { 
+    width: 100%;
+}

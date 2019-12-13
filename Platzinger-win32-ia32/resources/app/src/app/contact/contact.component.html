@@ -1,0 +1,5 @@
+<div *ngIf="contact" routerLink='/conversation/{{contact.uid}}'>
+    <img src="assets/img/logo_live_online.png" class="icon" alt="friend_pic">
+    <b>{{contact.nick}} - {{contact.subnick || 'No subnick'}}</b>
+    <small> {{contact.email}}</small>
+</div>

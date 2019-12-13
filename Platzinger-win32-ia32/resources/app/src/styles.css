@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+.avatarFrameOffline {
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    background: rgb(176,184,185);
+    background: linear-gradient(90deg, rgba(176,184,185,1) 0%, rgba(254,255,255,1) 51%, rgba(175,190,189,1) 100%);
+}
+
+.avatarFrameOnline {
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    background: rgb(27,175,7);
+    background: linear-gradient(180deg, rgba(27,175,7,1) 0%, rgba(78,239,86,1) 64%, rgba(36,189,8,1) 100%);
+}
+
+.center {
+    text-align: center !important;
+}
+
+.marto15 {
+    margin-top: 15px;
+}
+
+.marbo15 {
+    margin-bottom: 15px;
+}
+
+.marbo5 {
+    margin-bottom: 5px;
+}
+
+.pato45 {
+    padding-top: 45px;
+}
+
+.generalContent {
+    margin-top: 56px;
+}
+
+input[type="file"] {
+    /* display: none; */
+}
+
+.custom-file-upload {
+    background: rgb(243,249,248);
+    background: linear-gradient(180deg, rgba(243,249,248,1) 0%, rgba(131,247,234,1) 50%, rgba(243,249,248,1) 100%);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #8dd2f3;
+}
+
+.shaker {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    10% {transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {transform: translate(-3px, 0px) rotate(1deg);}
+    30% {transform: translate(3px, 2px) rotate(0deg);}
+    40% {transform: translate(1px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(3px, 2px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg);}
+    100% {transform: translate(1px, -2px) rotate(-1deg);}
+}
